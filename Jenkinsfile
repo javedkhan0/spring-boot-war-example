@@ -8,7 +8,7 @@ pipeline {
             steps{
                 // mvn test
                 sh "mvn test"
-                slackSend channel: 'youtubejenkins', message: 'Job Started'
+                git 'https://github.com/javedkhan0/spring-boot-war-example.git'
                 
             }
             
